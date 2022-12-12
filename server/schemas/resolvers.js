@@ -11,7 +11,7 @@ const resolvers = {
       }
       throw new AuthenticationError("You need to be logged in!");
     },
-    getUser: async (_, {id}) => {
+    getNonprofit: async (_, {id}) => {
       const response = await fetch(`https://partners.every.org/v0.2/nonprofit/${id}`);
       return response.json();
 
