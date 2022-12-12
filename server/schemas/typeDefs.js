@@ -48,7 +48,7 @@ type Nonprofit {
 
   type Query {
     me: User,
-    getUser: Nonprofit
+    getNonprofit: Nonprofit
   }
 
   type Mutation {
